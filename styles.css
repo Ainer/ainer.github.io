@@ -15,23 +15,16 @@ h2 {
     font-size: 35pt;
 }
 
-p {
-    text-align: justify;
-    line-height: 1.4em;
-    width: 50%;
-    margin: auto;
-}
-
-section {
-    max-width: 70%;
-    margin: auto;
+.intro-section {
+    max-width: 60%;
     padding: 50px;
+    margin: auto;
 }
 
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/kolace.jpg");
   
-    height: 50%;
+    height: 40%;
   
     background-position: center;
     background-repeat: no-repeat;
@@ -46,4 +39,35 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-  }
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;      /* center text horizontally */
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.flex-img {
+    flex: 0 0 40%;
+    max-width: 100%;
+}
+
+.flex-text {
+    flex: 0 0 45%;
+    padding: 0 2%;
+    display: flex;                /* create nested flex container */
+    justify-content: space-between;      /* center text horizontally */
+}
+
+.flex-bigitem {
+    max-width: 50%;
+    flex: 2 0 40%;
+ }
+ 
+ .flex-smallitem {
+    max-width: 30%;
+    flex: 1 0 30%;
+ }
